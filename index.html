@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <title>Web Forms</title>
+  </head>
+  <body>
+    <div class="container">
+      <article class="card card-account">
+        <header class="title">
+          <h1>Create an Account</h1>
+        </header>
+        <main>
+          <form
+            class="form"
+            action="#"
+            method="post"
+            enctype="application/x-www-form-urlencoded"
+          >
+            <section class="card-flex card-account__name">
+              <div class>
+                <label for="fname" class="label">First Name</label>
+                <input
+                  id="fname"
+                  type="text"
+                  name="fname"
+                  placeholder="Enter your name"
+                />
+              </div>
+              <div>
+                <label for="lname" class="label">Last Name</label>
+
+                <input
+                  id="lname"
+                  type="text"
+                  name="lname"
+                  placeholder="Enter your name"
+                />
+              </div>
+            </section>
+
+            <section class="card-account__email">
+              <div>
+                <label for="e-mail" class="label">E-mail</label>
+                <input
+                  id="e-mail"
+                  type="e-mail"
+                  name="e-mail"
+                  placeholder="Enter your e-mail"
+                />
+                <br />
+                <small>We'll never share your email with anyone else.</small>
+              </div>
+            </section>
+
+            <section class="card-account__radio">
+              <span>
+                <input
+                  checked
+                  class="radio"
+                  type="radio"
+                  name="gender"
+                  value="male"
+                />Male
+              </span>
+              <span>
+                <input
+                  class="radio"
+                  type="radio"
+                  name="gender"
+                  value="female"
+                />
+                Female
+              </span>
+            </section>
+
+            <section class="card-flex location">
+              <div>
+                <label for="country">Country</label>
+                <select name="country" id="country">
+                  <option value="Select">Select</option>
+                  <option value="France">France</option>
+                  <option value="Ukraine">Ukraine</option>
+                  <option value="USA">USA</option>
+                </select>
+              </div>
+              <div>
+                <label for="city">City</label>
+                <input id="city" type="text" name="city" />
+              </div>
+            </section>
+
+            <button class="btn card-account__btn" type="submit">Sign Up</button>
+          </form>
+        </main>
+        <footer class="card-account__footer">
+          <div class="privacy">
+            <div>
+              By clicking the 'Sign Up' button, you confirm that you accept our
+            </div>
+            <p>
+              <a href="#">Terms of Use</a> and
+              <a href="#">Privacy Policy</a>
+            </p>
+          </div>
+          <hr />
+          <section class="logIn">
+            <span>Have an account?</span>
+            <a href="#">Log In</a>
+          </section>
+        </footer>
+      </article>
+      <article class="card card-Profile">
+        <header class="title">
+          <h1>Profile</h1>
+        </header>
+        <main>
+          <form
+            action="#"
+            method="post"
+            enctype="application/x-www-form-urlencoded"
+          >
+            <section class="card-flex card-Profile__file">
+              <div id="photo">
+                <img src="assets/images/📷 Image.jpg" alt="Photo" />
+              </div>
+              <div class="card-Profile__flex">
+                <div>
+                  <label for="addfile" class="labelfile">
+                    <input
+                      id="addfile"
+                      accept=".jpg, .jpeg, .png, .gif"
+                      type="file"
+                      name="file"
+                    />Up to 1 MB (300x300 px)
+                  </label>
+                </div>
+                <div class="icon-add"></div>
+              </div>
+              <button id="iconDelete" type="reset"></button>
+            </section>
+
+            <section class="card-flex profile__name">
+              <div class>
+                <label for="name" class="label">Name</label>
+                <input
+                  id="name"
+                  type="text"
+                  name="name"
+                  placeholder="Enter your name"
+                />
+              </div>
+              <div>
+                <label for="email" class="label">E-mail</label>
+
+                <input
+                  id="email"
+                  type="text"
+                  name="email"
+                  placeholder="Enter your e-mail"
+                />
+              </div>
+            </section>
+
+            <section class="location card-flex">
+              <div>
+                <label for="country">Country</label>
+                <select name="country" id="country">
+                  <option value="Select">Select</option>
+                  <option value="France">France</option>
+                  <option value="Ukraine">Ukraine</option>
+                  <option value="USA">USA</option>
+                </select>
+              </div>
+              <div>
+                <label for="city">City</label>
+                <input id="city" type="text" name="city" />
+              </div>
+            </section>
+
+            <section class="card-flex profile__phone">
+              <div class>
+                <label for="zipcode" class="label">Zip Code</label>
+                <input id="zipcode" type="text" name="zipcode" />
+              </div>
+              <div>
+                <label for="phone" class="label">Phone Number</label>
+
+                <input
+                  id="phone"
+                  type="tel"
+                  name="phone"
+                  placeholder="Enter your phone"
+                />
+              </div>
+            </section>
+            <button class="btn profile__btn" type="submit">Update</button>
+          </form>
+        </main>
+      </article>
+    </div>
+  </body>
+</html>
