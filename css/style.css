@@ -49,6 +49,20 @@
   padding-left: 5px;
 }
 
+:is(#city,
+.btn,	
+#country,
+#lname,
+#fname,
+#name,
+#e-mail,
+#email,
+#zipcode,
+#phone):focus{
+	border: 1px #007bff solid;
+}
+
+
 label {
   display: block;
   margin-bottom: 7px;
@@ -109,6 +123,10 @@ select {
   width: 245px;
   height: 38px;
 }
+#none:disabled{
+	opacity: 0.5;
+	
+} 
 /* Section button */
 .btn {
   background: #007bff;
